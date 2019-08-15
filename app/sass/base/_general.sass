@@ -62,5 +62,23 @@ ul
 .hidden
   display: none!important
 // ======= END TEMPLATE STYLES =======
+.btn
+  display: inline-block
+  white-space: nowrap
+  text-align: center
+  min-width: 162px
+  line-height: 1
+  font-size: 14px
+  font-weight: 700
+  border: 1px solid transparent
+  +mt(.3s)
+  padding: 15px
+
+.btn-red
+  color: #fff
+  background-color: $accent
+  border-color: $accent
+  &:hover
+    background-color: darken($accent, 10%)
 
 

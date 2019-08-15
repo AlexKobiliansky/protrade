@@ -1,0 +1,33 @@
+.s-intro
+  background-color: #0f0f0f
+  color: #fff
+  text-align: center
+
+.intro-container
+  background-color: #222
+  position: relative
+  padding: 117px 0
+  line-height: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background-image: url('../img/bg-intro.png')
+    +bg-cover
+  h1, h2, .btn
+    position: relative
+    z-index: 2
+  h1
+    font-size: 35px
+    margin-bottom: 10px
+    text-transform: uppercase
+  h2
+    font-size: 18px
+    text-transform: uppercase
+    font-weight: normal
+  .btn
+    margin-top: 40px
+
