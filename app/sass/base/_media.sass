@@ -5,15 +5,70 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .top-line
+    .left
+      width: auto
+      .description
+        display: none
+
+  .main-mnu
+    li
+      margin: 0 10px
 
 // ≥992px
 +media-breakpoint-down(md)
+  .top-line
+    .middle
+      flex-grow: inherit
+    .right
+      font-size: 12px
+      .call
+        font-size: 16px
+        &:before
+          left: 40px
+
+  .main-mnu
+    li
+      margin: 0 8px
+      a
+        font-size: 14px
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .top-line
+    flex-wrap: wrap
+    .middle
+      order: 3
+      width: 100%
+      margin-top: 20px
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .top-line
+    .right
+      font-size: 13px
+      .mail
+        font-size: 12px
+        padding-left: 10px
+        &:before
+          left: 3px
+      a
+        font-size: 12px
+      .call
+        font-size: 14px
+        margin-top: 3px
+        &:before
+          width: 16px
+          height: 16px
+        &:before
+          left: 35px
+          top: 3px
+
+  .main-mnu
+    li
+      margin: 0 5px
+      a
+        font-size: 13px
 
 
 /*==========  Mobile First  ==========*/

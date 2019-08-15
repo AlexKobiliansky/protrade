@@ -1,0 +1,94 @@
+.top-line
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 25px 0
+  .left
+    display: flex
+    justify-content: space-between
+    width: 232px
+    .logo
+      display: inline-block
+      width: 85px
+    .description
+      font-size: 14px
+      line-height: 17px
+      width: calc(100% - 110px)
+      color: #222
+  .middle
+    flex-grow: 2
+  .right
+    font-size: 14px
+    text-align: right
+    a
+      text-decoration: underline
+      color: $accent
+      +mt(.3s)
+      &:hover
+        text-decoration: none
+    .call
+      display: block
+      font-size: 18px
+      font-weight: bold
+      color: $text
+      text-decoration: none
+      position: relative
+      margin-bottom: 3px
+      &:before
+        content: ''
+        position: absolute
+        width: 20px
+        height: 20px
+        background-image: url('../img/icons/call-icon.png')
+        +bg-cover
+        top: 4px
+        left: 35px
+      &:hover
+        color: $accent
+    .mail
+      display: inline-block
+      font-size: 14px
+      line-height: 22px
+      color: $text
+      opacity: .7
+      padding-left: 20px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        width: 1px
+        height: 16px
+        background-color: $text
+        opacity: .7
+        top: 4px
+        left: 8px
+
+.main-mnu
+  text-align: center
+  li
+    display: inline-block
+    margin: 0 22px
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+    a
+      +mt(.3s)
+      font-size: 16px
+      color: #222
+      font-weight: 700
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        height: 2px
+        width: 100%
+        opacity: 0
+        left: 0
+        bottom: -2px
+        background-color: $accent
+        +mt(.3s)
+      &:hover
+        color: $accent
+        &:after
+          opacity: 1
