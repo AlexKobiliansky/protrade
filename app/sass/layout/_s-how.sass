@@ -1,0 +1,55 @@
+.s-how
+  padding-top: 45px
+  counter-reset: how-item
+
+.how-wrap
+  position: relative
+  border-top: 6px solid #f8f8f8
+  border-bottom: 3px solid #f8f8f8
+  margin-top: 55px
+  padding-bottom: 30px
+  .container
+    position: relative
+    display: flex
+    top: -28px
+
+.how-item
+  margin-right: 50px
+  &-square
+    width: 50px
+    height: 50px
+    background-color: #fff
+    position: relative
+    margin-bottom: 7px
+    &:before
+      content: ''
+      position: absolute
+      width: 7px
+      height: 7px
+      background-color: $text
+      left: calc(50% - 3.5px)
+      top: calc(50% - 3.5px)
+    &:after
+      content: ''
+      position: absolute
+      width: 21px
+      height: 21px
+      border: 2px solid $accent
+      left: calc(50% - 10.5px)
+      top: calc(50% - 10.5px)
+  &-desc
+    position: relative
+    font-size: 18px
+    font-weight: 700
+    &:before
+      counter-increment: how-item
+      content: counter(how-item) " шаг"
+      display: block
+      font-size: 14px
+      color: $accent
+      font-weight: 700
+      line-height: 1
+      margin-bottom: 8px
+  &:last-child
+    margin-right: 0
+

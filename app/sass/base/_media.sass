@@ -5,6 +5,13 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-why
+    padding-top: 0
+
+  .why-item
+    padding-right: 0
+
   .top-line
     .left
       width: auto
@@ -17,6 +24,17 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .how-item
+    margin-right: 25px
+    &-desc
+      font-size: 16px
+      line-height: 1.2
+  .why-item
+    span
+      font-size: 16px
+    img
+      width: 60px
 
   .s-about
     padding-bottom: 350px
@@ -52,6 +70,34 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .how-wrap
+    border: none
+    .container
+      flex-direction: column
+      top: 0
+
+  .how-item
+    margin-bottom: 30px
+    display: flex
+    &-square
+      margin-right: 10px
+      position: relative
+      top: -12px
+    &-desc
+      font-size: 18px
+      width: calc(100% - 60px)
+
+  .s-why
+    padding-top: 45px
+
+  .why-item
+    margin-bottom: 30px
+    span
+      font-size: 18px
+    img
+      width: 80px
+
   .intro-container
     h1
       font-size: 28px
@@ -68,8 +114,25 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-why
+    padding-bottom: 15px
+
+  .why-wrap
+    margin-top: 40px
+
+  .section-title
+    font-size: 24px
+    margin-bottom: 15px
+
+  .why-item
+    img
+      width: 60px
+
   .s-about
     font-size: 16px
+    .section-title
+      &:after
+        bottom: -5px
   .about-img
     background-position: -70px center
 
