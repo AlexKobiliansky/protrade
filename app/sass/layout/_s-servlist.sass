@@ -1,0 +1,56 @@
+.s-servlist
+  padding-top: 90px
+  background-image: url('../img/bg-servlist.png')
+
+.servlist-item
+  margin-bottom: 30px
+  border: 1px solid #f1f1f1
+  &-title
+    +bg-cover
+    padding: 35px 45px
+    color: #fff
+    font-weight: 700
+    font-size: 18px
+    display: flex
+    align-items: center
+  &-content
+    padding: 0 45px 30px
+    background-color: #fff
+  .btn-wrap
+    margin-top: 25px
+  .more
+    font-size: 18px
+    color: $accent
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+.servlists
+  li>a
+    display: block
+    padding: 25px 0 25px 40px
+    +mt(.3s)
+    color: $text
+    position: relative
+    border-bottom: 1px solid #fbfbfb
+    &:before
+      content: ''
+      position: absolute
+      width: 19px
+      height: 18px
+      background-image: url('../img/icons/servlist-icon.png')
+      left: 0
+      top: 28px
+    &:after
+      content: ''
+      position: absolute
+      width: 5px
+      height: 9px
+      background-image: url('../img/icons/arrow-red.png')
+      right: 0
+      top: calc(50% - 4.5px)
+      +mt(.3s)
+    &:hover
+      color: $accent
+      &:after
+        right: 10px

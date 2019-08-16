@@ -39,6 +39,8 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/equalHeights/jquery.equalheights.min.js',
+		'app/libs/matchHeight/jquery.matchHeight-min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
