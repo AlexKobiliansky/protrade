@@ -1,0 +1,25 @@
+.breadcrumbs
+  line-height: 1
+  padding: 45px 0
+  a
+    display: inline-block
+    margin-right: 20px
+    +mt(.3s)
+    font-size: 16px
+    color: $text
+    &:hover
+      color: $accent
+    &:after
+      content: '/'
+      position: relative
+      left: 12px
+      color: $text
+      font-weight: normal
+    &:last-child
+      margin-right: 0
+      opacity: .7
+      pointer-events: none
+      &:after
+        display: none
+    &:first-child
+      font-weight: 700

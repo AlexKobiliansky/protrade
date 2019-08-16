@@ -60,7 +60,9 @@ $(document).ready(function(){
     });
 
 
-    <!-- javascript -->
+    $('.preloader').fadeOut();
+
+    <!-- maps -->
     ymaps.ready(function(){
         var mapId = $('#map'),
             attitude = mapId.data("att"),
