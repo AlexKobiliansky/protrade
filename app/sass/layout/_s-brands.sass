@@ -1,0 +1,42 @@
+.s-brands
+  padding: 60px 0 100px
+
+.brands-slider
+  margin-top: 55px
+  position: relative
+  .owl-nav
+    position: absolute
+    left: 0
+    top: calc(50% - 16.5px)
+    width: 100%
+    button.owl-prev, button.owl-next
+      width: 33px
+      height: 33px
+      background-color: #fff
+      border-radius: 50%
+      background-image: url('../img/icons/arrow-grey.png')
+      +mt(.3s)
+      background-repeat: no-repeat
+      background-position: center center
+      background-size: 6px 11px
+      position: absolute
+      &:hover
+        background-image: url('../img/icons/arrow-red.png')
+        background-color: #dcdcdc
+    button.owl-prev
+      transform: rotate(180deg)
+      left: -16.5px
+    button.owl-next
+      right: -16.5px
+
+.brand-slide
+  padding: 35px 55px
+  background-color: #f8f8f8
+  display: flex
+  justify-content: center
+  align-items: center
+  filter: grayscale(1)
+  +mt(.3s)
+  cursor: pointer
+  &:hover
+    filter: none
