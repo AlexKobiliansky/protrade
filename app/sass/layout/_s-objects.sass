@@ -1,0 +1,33 @@
+.s-objects
+  padding: 40px 0 50px
+
+.objects-wrap
+  margin-top: 45px
+
+.object-item
+  display: flex
+  padding: 25px
+  height: 200px
+  margin-bottom: 30px
+  +bg-cover
+  position: relative
+  align-items: center
+  color: #fff
+  +mt(.3s)
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(#000, .7)
+    +mt(.3s)
+  &-title
+    font-weight: 700
+    line-height: 23px
+    z-index: 1
+  &:hover
+    color: #fff
+    &:before
+      background-color: rgba(#000, .4)
