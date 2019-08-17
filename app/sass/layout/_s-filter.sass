@@ -1,0 +1,120 @@
+.s-filter
+  .search-form
+    float: right
+    width: 440px
+    label
+      width: calc(100% - 162px)
+      margin-bottom: 0
+      position: relative
+      left: 1px
+    .btn
+      position: relative
+      z-index: 2
+    input
+      font-weight: 700
+
+.pagination
+  display: inline-block
+  padding: 0 15px
+  position: relative
+  margin-top: 13px
+  .pag-prev, .pag-next
+    display: inline-block
+    width: 5px
+    height: 9px
+    +bg-cover
+    background-image: url('../img/icons/arrow-darkgrey.png')
+    +mt(.3s)
+    position: absolute
+    top: calc(50% - 4.5px)
+    &:hover
+      background-image: url('../img/icons/arrow-black.png')
+  .pag-prev
+    transform: rotate(180deg)
+    left: 0
+  .pag-next
+    right: 0
+
+
+.pag-container
+  a
+    font-size: 14px
+    font-weight: 700
+    padding: 3px 5px
+    color: $text
+    +mt(.3s)
+    opacity: .4
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: calc(100% - 6px)
+      height: 1px
+      background-color: $text
+      bottom: 3px
+      left: 3px
+    &:hover, &.current
+      opacity: 1
+    &.current
+      pointer-events: none
+      &:after
+        display: none
+
+.products-wrap
+  margin-top: 35px
+
+.product-item
+  padding: 25px 0
+  display: flex
+  border-bottom: 1px solid #d9d9d9
+  &-title
+    font-size: 16px
+    font-weight: 700
+    text-decoration: underline
+    padding-right: 80px
+    margin-bottom: 20px
+  &-chars
+    li
+      font-size: 14px
+      opacity: .8
+      margin-bottom: 8px
+      span
+        font-weight: 700
+  &-img
+    max-width: 252px
+  &-num
+    font-size: 14px
+    font-weight: 700
+    position: absolute
+    right: 0
+    top: 0
+    &:before
+      content: ''
+      position: absolute
+      left: -30px
+      width: 19px
+      height: 19px
+      background-position: center center
+      background-size: 100%
+      background-repeat: no-repeat
+      background-image: url('../img/icons/check-red.png')
+  &.request
+    .product-item-num
+      &:before
+        background-image: url('../img/icons/att-icon.png')
+
+.product-half
+  width: 50%
+  position: relative
+
+.product-desc
+  padding: 45px 0 90px
+  .btn-wrap
+    text-align: right
+    margin-top: 30px
+    .more
+      font-weight: 700
+      text-decoration: underline
+      color: $accent
+      &:hover
+        text-decoration: none

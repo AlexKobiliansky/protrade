@@ -1,0 +1,81 @@
+
+.filters-wrap
+  border-top: 1px solid #d9d9d9
+  border-bottom: 1px solid #d9d9d9
+  padding: 30px 0
+  margin-bottom: 35px
+
+.filter-item
+  &-top
+    padding: 12px 30px
+    font-size: 16px
+    font-weight: 700
+    position: relative
+    cursor: pointer
+    line-height: 1.2
+    &:before
+      content: '+'
+      position: absolute
+      width: 15px
+      height: 15px
+      background-color: $accent
+      color: #fff
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
+      left: 0
+      top: 15px
+      font-size: 14px
+      padding-bottom: 1px
+    &:after
+      content: ''
+      position: absolute
+      width: 5px
+      height: 9px
+      background-image: url('../img/icons/arrow-darkgrey.png')
+      +bg-cover
+      transform: rotate(90deg)
+      right: 0
+      top: calc(50% - 4.5px)
+  &-bottom
+    font-size: 14px
+    line-height: 1
+    padding: 10px 0 0
+    display: none
+    label
+      display: block
+      margin-bottom: 15px
+      padding-left: 30px
+    .jq-checkbox
+      width: 14px
+      height: 14px
+      border-radius: 2px
+      position: relative
+      top: -2px
+      margin-right: 10px
+    .jq-checkbox.checked .jq-checkbox__div
+      border-color: $accent
+  &.opened
+    .filter-item-top
+      &:after
+        transform: rotate(270deg)
+      &:before
+        content: '-'
+
+.other-prod
+  display: flex
+  width: 100%
+  padding: 16px
+  font-size: 16px
+  font-weight: 700
+  color: $text
+  +mt(.3s)
+  justify-content: center
+  align-items: center
+  background-color: #efefef
+  margin-bottom: 20px
+  &:hover
+    background-color: $accent
+    color: #fff
+
