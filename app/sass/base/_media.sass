@@ -6,11 +6,16 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .s-text
+    padding: 45px 0
+
   .foot-contacts
     padding-left: 0
 
   .s-why
     padding-top: 0
+    &.pb-85
+      padding-top: 45px
 
   .why-item
     padding-right: 0
@@ -27,6 +32,14 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-intro-about
+    background-position: -350px center
+
+  .why-item
+    span
+      &>span
+        font-size: 12px
 
   .foot-contacts
     margin-bottom: 30px
@@ -124,7 +137,20 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
-  .s-cat
+  .s-text
+    font-size: 16px
+
+  .s-intro-about
+    background-position: -600px center
+
+  .s-why.pb-85
+    padding-bottom: 45px!important
+
+  .s-service
+    .section-title
+      margin-bottom: 30px
+
+  .s-cat, .s-service
     padding: 45px 0 15px
     .section-title
       text-align: center

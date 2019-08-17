@@ -1,6 +1,10 @@
 .s-how
   padding-top: 45px
   counter-reset: how-item
+  .notice
+    font-size: 14px
+    text-align: center
+    margin-top: 20px
 
 .how-wrap
   position: relative
@@ -11,6 +15,7 @@
   .container
     position: relative
     display: flex
+    justify-content: center
     top: -28px
 
 .how-item
@@ -41,6 +46,7 @@
     position: relative
     font-size: 18px
     font-weight: 700
+    line-height: 1.2
     &:before
       counter-increment: how-item
       content: counter(how-item) " шаг"
@@ -52,4 +58,13 @@
       margin-bottom: 8px
   &:last-child
     margin-right: 0
+  &.no-step
+    .how-item-desc
+      &:before
+        display: none
+  span
+    font-weight: normal
+    display: block
+    font-size: 16px
+    margin-top: 3px
 
